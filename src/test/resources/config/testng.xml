@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><suite name="Suite" parallel="tests" thread-count="20">
+  <test id="1" name="Desktop1">
+    <parameter name="selenium.machinename" value="DesktopChrome"/>
+    <parameter name="selenium.browser" value="Chrome"/>
+    <parameter id="1" name="selenium.url" value="https://tst-custom.tmw.com"/>
+    <parameter id="1" name="selenium.host" value="localhost"/>
+    <parameter id="1" name="selenium.port" value="1234"/>
+    <parameter id="1" name="selenium.os" value="Windows"/>
+    <parameter id="1" name="selenium.browserVersion" value="64"/>
+    <parameter id="1" name="selenium.osVersion" value="10"/>
+    <parameter id="1" name="TestData.SheetNumber" value="1"/>
+    <classes name="1">
+      <class id="1" name="testCases.TestCases"/>
+      <methods id="1">
+        <include name="TC001"/>
+      </methods>
+    </classes>
+  </test>
+</suite>
