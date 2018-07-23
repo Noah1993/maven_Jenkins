@@ -4,7 +4,7 @@
     <parameter name="selenium.browser" value="Chrome"/>
     <parameter id="1" name="selenium.url" value="https://tst-custom.tmw.com"/>
     <parameter id="1" name="selenium.host" value="localhost"/>
-    <parameter id="1" name="selenium.port" value="1234"/>
+    <parameter id="1" name="selenium.port" value="${portNo}"/>
     <parameter id="1" name="selenium.os" value="Windows"/>
     <parameter id="1" name="selenium.browserVersion" value="64"/>
     <parameter id="1" name="selenium.osVersion" value="10"/>

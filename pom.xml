@@ -112,6 +112,29 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+                <execution>
+                    <id>copy-resources</id>
+                    <phase>validate</phase>
+                    <goals>
+                        <goal>resources</goal>
+                    </goals>
+                    <configuration>
+                        <outputDirectory>${project.basedir}/target</outputDirectory>
+                        <resources>          
+                            <resource>
+                                <directory>${project.basedir}/src/test/resources/config/testng.xml</directory>
+                                <filtering>true</filtering>
+                            </resource>
+                        </resources>              
+                    </configuration>            
+                 </execution>
+            </executions>
+        	</plugin>
 
 		</plugins>
 	</build>
