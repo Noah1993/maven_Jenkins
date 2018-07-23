@@ -3,7 +3,7 @@
     <parameter name="selenium.machinename" value="DesktopChrome"/>
     <parameter name="selenium.browser" value="Chrome"/>
     <parameter id="1" name="selenium.url" value="https://tst-custom.tmw.com"/>
-    <parameter id="1" name="selenium.host" value="localhost"/>
+    <parameter id="1" name="selenium.host" value="192.168.1.8"/>
     <parameter id="1" name="selenium.port" value="7850"/>
     <parameter id="1" name="selenium.os" value="Windows"/>
     <parameter id="1" name="selenium.browserVersion" value="64"/>
