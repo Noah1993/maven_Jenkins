@@ -77,7 +77,7 @@
 	<build>
 		<plugins>
 
-
+			<!-- org.apache.maven.plugins:maven-surefire-plugin:2.12:test -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -113,7 +113,8 @@
 				</configuration>
 			</plugin>
 			
-			<plugin>
+			<!-- <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-resources-plugin</artifactId>
             <version>3.0.1</version>
             <executions>
@@ -121,20 +122,20 @@
                     <id>copy-resources</id>
                     <phase>validate</phase>
                     <goals>
-                        <goal>resources</goal>
+                        <goal>copy-resources</goal>
                     </goals>
                     <configuration>
-                        <outputDirectory>${project.basedir}/target</outputDirectory>
+                        <outputDirectory>${project.basedir}/target/output</outputDirectory>
                         <resources>          
                             <resource>
-                                <directory>${project.basedir}/src/test/resources/config/testng.xml</directory>
+                                <directory>${project.basedir}/src/test/resources/config</directory>
                                 <filtering>true</filtering>
                             </resource>
                         </resources>              
                     </configuration>            
                  </execution>
             </executions>
-        	</plugin>
+        	</plugin> -->
 
 		</plugins>
 	</build>
