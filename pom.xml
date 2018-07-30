@@ -128,7 +128,7 @@
               <outputDirectory>${project.basedir}/src/test/resources/config/testng.xml</outputDirectory>
               <resources>          
                 <resource>
-                  <directory>${project.basedir}/src/test/resources/config</directory>
+                  <directory>${project.basedir}/src/test/resources/config/testng.xml</directory>
                   <filtering>true</filtering>
                 </resource>
               </resources>              
